@@ -93,7 +93,7 @@ namespace Examen_SegundoParcial.Vistas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(682, 450);
+            this.ClientSize = new System.Drawing.Size(573, 255);
             this.Controls.Add(this.Cancelar);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.textcontra);
