@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Examen_SegundoParcial
+namespace Examen_SegundoParcial.Vistas
 {
-    public partial class Form1 : Form
+    public partial class MenuView : Form
     {
-        public Form1()
+        public MenuView()
         {
             InitializeComponent();
         }
