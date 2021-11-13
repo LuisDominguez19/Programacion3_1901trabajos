@@ -40,8 +40,8 @@ namespace Examen_SegundoParcial.Controladores
                 MenuView menu = new MenuView();
                 vista.Hide();
                 menu.Show();
-
             }
+
             else
             {
                 MessageBox.Show("Usuario Incorrecto");

@@ -81,7 +81,7 @@ namespace Examen_SegundoParcial.Vistas
             this.ribbonControlAdv1.QuickPanelVisible = false;
             this.ribbonControlAdv1.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None;
             this.ribbonControlAdv1.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2016;
-            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem1;
+            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem4;
             this.ribbonControlAdv1.ShowRibbonDisplayOptionButton = false;
             this.ribbonControlAdv1.Size = new System.Drawing.Size(605, 155);
             this.ribbonControlAdv1.SystemText.QuickAccessDialogDropDownName = "Start menu";
@@ -135,6 +135,7 @@ namespace Examen_SegundoParcial.Vistas
             this.btnmantenimiento.Name = "btnmantenimiento";
             this.btnmantenimiento.Size = new System.Drawing.Size(163, 72);
             this.btnmantenimiento.Text = "Lista de mantenimiento";
+            this.btnmantenimiento.Click += new System.EventHandler(this.btnmantenimiento_Click);
             // 
             // toolStrip
             // 
@@ -324,16 +325,16 @@ namespace Examen_SegundoParcial.Vistas
         private Syncfusion.Windows.Forms.Tools.RibbonControlAdv ribbonControlAdv1;
         private Syncfusion.Windows.Forms.Tools.ToolStripTabItem toolStripTabItem1;
         private Syncfusion.Windows.Forms.Tools.ToolStripEx btnmantenimiento1;
-        private System.Windows.Forms.ToolStripButton btnmantenimiento;
         private Syncfusion.Windows.Forms.Tools.ToolStripTabItem toolStrip;
         private Syncfusion.Windows.Forms.Tools.ToolStripTabItem btnTicket;
         private Syncfusion.Windows.Forms.Tools.ToolStripTabItem toolStripTabItem4;
-        private Syncfusion.Windows.Forms.Tools.ToolStripEx btnestados;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private Syncfusion.Windows.Forms.Tools.ToolStripEx Btntickets;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
-        private Syncfusion.Windows.Forms.Tools.ToolStripEx btnDetalle;
         private System.Windows.Forms.ToolStripButton btnDetalles;
         private Syncfusion.Windows.Forms.BackStage backStage1;
+        public System.Windows.Forms.ToolStripButton btnmantenimiento;
+        public Syncfusion.Windows.Forms.Tools.ToolStripEx btnestados;
+        public Syncfusion.Windows.Forms.Tools.ToolStripEx Btntickets;
+        public Syncfusion.Windows.Forms.Tools.ToolStripEx btnDetalle;
     }
 }

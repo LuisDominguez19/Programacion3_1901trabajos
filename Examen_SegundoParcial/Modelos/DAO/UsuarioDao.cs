@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Examen_SegundoParcial.Modelos.DAO
 {
-    public class UsuarioDao:Conexion
+    public class UsuarioDao : Conexion
     {
         SqlCommand comando = new SqlCommand();
 
@@ -35,12 +35,37 @@ namespace Examen_SegundoParcial.Modelos.DAO
 
 
             }
-            catch(Exception)
+            catch (Exception)
             {
-                
+
             }
             return valido;
         }
-            
+        public bool RegistrarNuevoUsuario(Usuario user)
+        {
+            try
+            {
+                StringBuilder sql = new StringBuilder();
+                sql.Append(" INSERT INTO TIPOM");
+                sql.Append(" VALUES (@Tipos,@Precio,@Nombre, @Telefono )");
+                comando.Connection = MiConexion;
+                MiConexion.Open();
+                comando.CommandType = CommandType.Text;
+                comando.CommandText = sql.ToString();
+                comando.Parameters.Add("@Tipo_Soporte", SqlDbType.NVarChar, 50).Value = user.TipoMantenimiento;
+                comando.Parameters.Add("@Nombre", SqlDbType.Int).Value = user.Nombre;
+                comando.Parameters.Add("@Precio", SqlDbType.NVarChar, 50).Value = user.Precio;
+                comando.Parameters.Add("@Telefono", SqlDbType.Int).Value = user.Telefono;
+                comando.ExecuteNonQuery();
+                return true;
+                MiConexion.Close();
+            }
+            catch (Exception)
+            {
+
+                return false;
+            }
+        }
+
     }
 }

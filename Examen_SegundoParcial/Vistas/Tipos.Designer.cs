@@ -29,20 +29,23 @@ namespace Examen_SegundoParcial.Vistas
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textprecio = new System.Windows.Forms.TextBox();
             this.btnguardar = new System.Windows.Forms.Button();
             this.btnregresar = new System.Windows.Forms.Button();
             this.comboBoxNombre = new System.Windows.Forms.ComboBox();
-            this.btnnuevo = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textTelf = new System.Windows.Forms.TextBox();
-            this.textNombre = new System.Windows.Forms.TextBox();
+            this.TextNombre = new System.Windows.Forms.TextBox();
             this.btnModificar = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -104,15 +107,15 @@ namespace Examen_SegundoParcial.Vistas
             this.comboBoxNombre.Size = new System.Drawing.Size(157, 21);
             this.comboBoxNombre.TabIndex = 6;
             // 
-            // btnnuevo
+            // btnNuevo
             // 
-            this.btnnuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnnuevo.Location = new System.Drawing.Point(47, 228);
-            this.btnnuevo.Name = "btnnuevo";
-            this.btnnuevo.Size = new System.Drawing.Size(86, 30);
-            this.btnnuevo.TabIndex = 7;
-            this.btnnuevo.Text = "Nuevo";
-            this.btnnuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo.Location = new System.Drawing.Point(47, 228);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(86, 30);
+            this.btnNuevo.TabIndex = 7;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -151,22 +154,26 @@ namespace Examen_SegundoParcial.Vistas
             this.textTelf.Size = new System.Drawing.Size(133, 20);
             this.textTelf.TabIndex = 11;
             // 
-            // textNombre
+            // TextNombre
             // 
-            this.textNombre.Location = new System.Drawing.Point(112, 26);
-            this.textNombre.Name = "textNombre";
-            this.textNombre.Size = new System.Drawing.Size(133, 20);
-            this.textNombre.TabIndex = 12;
+            this.TextNombre.Location = new System.Drawing.Point(112, 26);
+            this.TextNombre.Name = "TextNombre";
+            this.TextNombre.Size = new System.Drawing.Size(133, 20);
+            this.TextNombre.TabIndex = 12;
             // 
             // btnModificar
             // 
             this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.Location = new System.Drawing.Point(148, 228);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(78, 30);
+            this.btnModificar.Size = new System.Drawing.Size(97, 30);
             this.btnModificar.TabIndex = 13;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // Tipos
             // 
@@ -174,12 +181,12 @@ namespace Examen_SegundoParcial.Vistas
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(744, 317);
             this.Controls.Add(this.btnModificar);
-            this.Controls.Add(this.textNombre);
+            this.Controls.Add(this.TextNombre);
             this.Controls.Add(this.textTelf);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btnnuevo);
+            this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.comboBoxNombre);
             this.Controls.Add(this.btnregresar);
             this.Controls.Add(this.btnguardar);
@@ -189,6 +196,7 @@ namespace Examen_SegundoParcial.Vistas
             this.Name = "Tipos";
             this.Text = "Tipos";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,13 +209,14 @@ namespace Examen_SegundoParcial.Vistas
         public System.Windows.Forms.TextBox textprecio;
         public System.Windows.Forms.Button btnguardar;
         public System.Windows.Forms.Button btnregresar;
-        private System.Windows.Forms.ComboBox comboBoxNombre;
-        private System.Windows.Forms.Button btnnuevo;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textTelf;
-        private System.Windows.Forms.TextBox textNombre;
-        private System.Windows.Forms.Button btnModificar;
+        public System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.Button btnNuevo;
+        public System.Windows.Forms.ErrorProvider errorProvider1;
+        public System.Windows.Forms.TextBox TextNombre;
+        public System.Windows.Forms.TextBox textTelf;
+        public System.Windows.Forms.ComboBox comboBoxNombre;
+        public System.Windows.Forms.Button btnModificar;
     }
 }

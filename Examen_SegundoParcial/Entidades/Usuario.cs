@@ -17,6 +17,12 @@ namespace Examen_SegundoParcial.Entidades
 
         public string ADMIN { get; set; }
 
+        public String  Telefono { get; set; }
+
+         public string TipoMantenimiento { get; set; }
+
+        public  int Precio { get; set; }
+
 
     }
 }

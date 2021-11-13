@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Examen_SegundoParcial.Controladores;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,8 @@ namespace Examen_SegundoParcial.Vistas
         public Tipos()
         {
             InitializeComponent();
+            TiposController controller = new TiposController(this);
+
         }
 
         private void textprecio_TextChanged(object sender, EventArgs e)

@@ -21,5 +21,11 @@ namespace Examen_SegundoParcial.Vistas
         {
 
         }
+
+        private void btnmantenimiento_Click(object sender, EventArgs e)
+        {
+            Tipos users = new Tipos();
+            users.Show();
+        }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace Examen_SegundoParcial.Vistas
 {
-    partial class Detalles
+    partial class DetallesView
     {
         /// <summary>
         /// Required designer variable.
@@ -39,7 +39,7 @@ namespace Examen_SegundoParcial.Vistas
             this.label2 = new System.Windows.Forms.Label();
             this.textsoporte = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textprecio = new System.Windows.Forms.TextBox();
+            this.texttotal = new System.Windows.Forms.TextBox();
             this.Cliente.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,14 +82,14 @@ namespace Examen_SegundoParcial.Vistas
             // Cliente
             // 
             this.Cliente.Controls.Add(this.label3);
-            this.Cliente.Controls.Add(this.textprecio);
+            this.Cliente.Controls.Add(this.texttotal);
             this.Cliente.Controls.Add(this.label2);
             this.Cliente.Controls.Add(this.textsoporte);
             this.Cliente.Controls.Add(this.label1);
             this.Cliente.Controls.Add(this.textBox1);
             this.Cliente.Location = new System.Drawing.Point(43, 73);
             this.Cliente.Name = "Cliente";
-            this.Cliente.Size = new System.Drawing.Size(581, 165);
+            this.Cliente.Size = new System.Drawing.Size(581, 190);
             this.Cliente.TabIndex = 4;
             this.Cliente.TabStop = false;
             this.Cliente.Text = "Cliente";
@@ -137,17 +137,17 @@ namespace Examen_SegundoParcial.Vistas
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(295, 76);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 13);
+            this.label3.Size = new System.Drawing.Size(36, 13);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Precio";
+            this.label3.Text = "Total";
             // 
-            // textprecio
+            // texttotal
             // 
-            this.textprecio.Location = new System.Drawing.Point(289, 92);
-            this.textprecio.Name = "textprecio";
-            this.textprecio.ReadOnly = true;
-            this.textprecio.Size = new System.Drawing.Size(261, 20);
-            this.textprecio.TabIndex = 6;
+            this.texttotal.Location = new System.Drawing.Point(289, 92);
+            this.texttotal.Name = "texttotal";
+            this.texttotal.ReadOnly = true;
+            this.texttotal.Size = new System.Drawing.Size(261, 20);
+            this.texttotal.TabIndex = 6;
             // 
             // Detalles
             // 
@@ -180,6 +180,6 @@ namespace Examen_SegundoParcial.Vistas
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
-        public System.Windows.Forms.TextBox textprecio;
+        public System.Windows.Forms.TextBox texttotal;
     }
 }

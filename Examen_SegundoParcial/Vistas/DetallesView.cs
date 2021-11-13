@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Examen_SegundoParcial.Vistas
 {
-    public partial class Detalles : Form
+    public partial class DetallesView : Form
     {
-        public Detalles()
+        public DetallesView()
         {
             InitializeComponent();
         }
