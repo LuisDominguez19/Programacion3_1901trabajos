@@ -16,5 +16,10 @@ namespace Examen_SegundoParcial.Vistas
         {
             InitializeComponent();
         }
+
+        private void textprecio_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

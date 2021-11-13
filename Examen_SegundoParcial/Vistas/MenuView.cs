@@ -16,5 +16,10 @@ namespace Examen_SegundoParcial.Vistas
         {
             InitializeComponent();
         }
+
+        private void ribbonControlAdv1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

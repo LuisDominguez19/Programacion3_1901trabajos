@@ -36,7 +36,11 @@ namespace Examen_SegundoParcial.Controladores
             bool valido = userDao.ValidarUsuario(user);
             if (valido)
             {
-                MessageBox.Show("Usuario Correcto");
+                // MessageBox.Show("Usuario Correcto");
+                MenuView menu = new MenuView();
+                vista.Hide();
+                menu.Show();
+
             }
             else
             {
