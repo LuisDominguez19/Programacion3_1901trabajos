@@ -165,5 +165,14 @@
   <ItemGroup>
     <None Include="Resources\reparacion-de-la-maquina1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfil-de-usuario-con-icono-de-linea-de-senal-de-entrada-simbolo-de-inicio-de-sesion-de-cuenta-2c9x1xa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\programador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bloqueador-de-anuncios.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

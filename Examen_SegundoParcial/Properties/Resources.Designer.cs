@@ -63,6 +63,16 @@ namespace Examen_SegundoParcial.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bloqueador_de_anuncios {
+            get {
+                object obj = ResourceManager.GetObject("bloqueador-de-anuncios", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap boleto {
             get {
                 object obj = ResourceManager.GetObject("boleto", resourceCulture);
@@ -106,6 +116,27 @@ namespace Examen_SegundoParcial.Properties {
         internal static System.Drawing.Bitmap mantenimiento__1_ {
             get {
                 object obj = ResourceManager.GetObject("mantenimiento (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap perfil_de_usuario_con_icono_de_linea_de_senal_de_entrada_simbolo_de_inicio_de_sesion_de_cuenta_2c9x1xa {
+            get {
+                object obj = ResourceManager.GetObject("perfil-de-usuario-con-icono-de-linea-de-senal-de-entrada-simbolo-de-inicio-de-ses" +
+                        "ion-de-cuenta-2c9x1xa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap programador {
+            get {
+                object obj = ResourceManager.GetObject("programador", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

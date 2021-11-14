@@ -40,62 +40,74 @@ namespace Examen_SegundoParcial.Vistas
             // Email
             // 
             this.Email.AutoSize = true;
-            this.Email.Location = new System.Drawing.Point(71, 30);
+            this.Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Email.ForeColor = System.Drawing.Color.White;
+            this.Email.Location = new System.Drawing.Point(108, 65);
             this.Email.Name = "Email";
-            this.Email.Size = new System.Drawing.Size(32, 13);
+            this.Email.Size = new System.Drawing.Size(47, 16);
             this.Email.TabIndex = 0;
             this.Email.Text = "Email";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(74, 65);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(79, 103);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 13);
+            this.label2.Size = new System.Drawing.Size(87, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Contraseña";
             // 
             // textemail
             // 
-            this.textemail.Location = new System.Drawing.Point(172, 22);
+            this.textemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textemail.Location = new System.Drawing.Point(169, 59);
             this.textemail.Name = "textemail";
-            this.textemail.Size = new System.Drawing.Size(197, 20);
+            this.textemail.Size = new System.Drawing.Size(257, 24);
             this.textemail.TabIndex = 2;
             this.textemail.Text = "luisdominguez.1924@gmail.com";
             // 
             // textcontra
             // 
-            this.textcontra.Location = new System.Drawing.Point(172, 65);
+            this.textcontra.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textcontra.Location = new System.Drawing.Point(169, 101);
             this.textcontra.Name = "textcontra";
             this.textcontra.PasswordChar = '*';
-            this.textcontra.Size = new System.Drawing.Size(197, 20);
+            this.textcontra.Size = new System.Drawing.Size(197, 24);
             this.textcontra.TabIndex = 3;
             this.textcontra.Text = "1998";
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(144, 141);
+            this.btnAceptar.BackColor = System.Drawing.Color.Yellow;
+            this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptar.Location = new System.Drawing.Point(169, 131);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(75, 23);
+            this.btnAceptar.Size = new System.Drawing.Size(75, 31);
             this.btnAceptar.TabIndex = 4;
             this.btnAceptar.Text = "Aceptar";
-            this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.UseVisualStyleBackColor = false;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // Cancelar
             // 
-            this.Cancelar.Location = new System.Drawing.Point(294, 141);
+            this.Cancelar.BackColor = System.Drawing.Color.Yellow;
+            this.Cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cancelar.Location = new System.Drawing.Point(250, 131);
             this.Cancelar.Name = "Cancelar";
-            this.Cancelar.Size = new System.Drawing.Size(75, 23);
+            this.Cancelar.Size = new System.Drawing.Size(86, 31);
             this.Cancelar.TabIndex = 5;
             this.Cancelar.Text = "Cancelar";
-            this.Cancelar.UseVisualStyleBackColor = true;
+            this.Cancelar.UseVisualStyleBackColor = false;
             // 
             // LoginView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(573, 255);
+            this.BackColor = System.Drawing.Color.Navy;
+            this.BackgroundImage = global::Examen_SegundoParcial.Properties.Resources.programador;
+            this.ClientSize = new System.Drawing.Size(505, 264);
             this.Controls.Add(this.Cancelar);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.textcontra);
