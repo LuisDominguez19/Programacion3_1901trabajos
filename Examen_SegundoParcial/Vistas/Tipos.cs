@@ -24,5 +24,10 @@ namespace Examen_SegundoParcial.Vistas
         {
 
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

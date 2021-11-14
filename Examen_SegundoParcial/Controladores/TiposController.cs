@@ -13,14 +13,33 @@ namespace Examen_SegundoParcial.Controladores
     public class TiposController
     {
         string Operacion = String.Empty;
+        UsuarioDao usuarioDao = new UsuarioDao();
+        Usuario user = new Usuario();
         Tipos Vistas;
+        
+        
+        
 
        public TiposController (Tipos view)
         {
             Vistas = view;
             Vistas.btnNuevo.Click += new EventHandler(Nuevo);
             Vistas.btnguardar.Click += new EventHandler(Guardar);
+            Vistas.Load += new EventHandler(load);
+
         }
+
+        private void load(object sender, EventArgs e)
+        {
+            listarUsuarios();
+        }
+         private void listarUsuarios()
+         {
+            Vistas.dataGridView1.DataSource = usuarioDao.GetTipos();
+         }
+
+   
+
         private void Nuevo(object sender, EventArgs e)
         {
             HabilitarBotones();
@@ -52,8 +71,7 @@ namespace Examen_SegundoParcial.Controladores
                 return;
             }
 
-            UsuarioDao usuarioDao = new UsuarioDao();
-            Usuario user = new Usuario();
+            
             //user.TipoMantenimiento  = vistas.comboBox1.;
             user.Nombre = Vistas.TextNombre.Text;
             user.Telefono = (Vistas.textTelf.Text);
@@ -61,8 +79,15 @@ namespace Examen_SegundoParcial.Controladores
             if(Operacion == "Nuevo")
             {
                 bool insert = usuarioDao.RegistrarNuevoUsuario(user);
+                listarUsuarios();
+                Limpiarcontroles();
             }
             
+        }
+
+        private void Limpiarcontroles()
+        {
+           
         }
 
         private void HabilitarBotones()

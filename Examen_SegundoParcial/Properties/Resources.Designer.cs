@@ -63,6 +63,16 @@ namespace Examen_SegundoParcial.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap boleto {
+            get {
+                object obj = ResourceManager.GetObject("boleto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap boletos_de_avion {
             get {
                 object obj = ResourceManager.GetObject("boletos-de-avion", resourceCulture);
@@ -106,6 +116,16 @@ namespace Examen_SegundoParcial.Properties {
         internal static System.Drawing.Bitmap reparacion_de_la_maquina {
             get {
                 object obj = ResourceManager.GetObject("reparacion-de-la-maquina", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reparacion_de_la_maquina1 {
+            get {
+                object obj = ResourceManager.GetObject("reparacion-de-la-maquina1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

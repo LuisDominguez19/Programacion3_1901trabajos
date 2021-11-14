@@ -35,10 +35,10 @@ namespace Examen_SegundoParcial.Vistas
             this.btnmantenimiento = new System.Windows.Forms.ToolStripButton();
             this.toolStrip = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.btnestados = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.butEstado = new System.Windows.Forms.ToolStripButton();
             this.btnTicket = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.Btntickets = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.butonTicket = new System.Windows.Forms.ToolStripButton();
             this.toolStripTabItem4 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.btnDetalle = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
             this.btnDetalles = new System.Windows.Forms.ToolStripButton();
@@ -81,7 +81,7 @@ namespace Examen_SegundoParcial.Vistas
             this.ribbonControlAdv1.QuickPanelVisible = false;
             this.ribbonControlAdv1.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None;
             this.ribbonControlAdv1.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2016;
-            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem4;
+            this.ribbonControlAdv1.SelectedTab = this.toolStrip;
             this.ribbonControlAdv1.ShowRibbonDisplayOptionButton = false;
             this.ribbonControlAdv1.Size = new System.Drawing.Size(605, 155);
             this.ribbonControlAdv1.SystemText.QuickAccessDialogDropDownName = "Start menu";
@@ -90,7 +90,6 @@ namespace Examen_SegundoParcial.Vistas
             this.ribbonControlAdv1.Text = "ribbonControlAdv1";
             this.ribbonControlAdv1.ThemeName = "Office2016";
             this.ribbonControlAdv1.ThemeStyle.MoreCommandsStyle.PropertyGridViewBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
-            this.ribbonControlAdv1.Click += new System.EventHandler(this.ribbonControlAdv1_Click);
             // 
             // toolStripTabItem1
             // 
@@ -163,7 +162,7 @@ namespace Examen_SegundoParcial.Vistas
             this.btnestados.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.btnestados.Image = null;
             this.btnestados.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1});
+            this.butEstado});
             this.btnestados.Location = new System.Drawing.Point(0, 1);
             this.btnestados.Name = "btnestados";
             this.btnestados.Office12Mode = false;
@@ -172,16 +171,18 @@ namespace Examen_SegundoParcial.Vistas
             this.btnestados.Size = new System.Drawing.Size(148, 89);
             this.btnestados.TabIndex = 0;
             this.btnestados.Text = "Estados de Producto";
+            this.btnestados.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.btnestados_ItemClicked);
             // 
-            // toolStripButton1
+            // butEstado
             // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::Examen_SegundoParcial.Properties.Resources.reparacion_de_la_maquina;
-            this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(36, 72);
-            this.toolStripButton1.Text = "toolStripButton1";
+            this.butEstado.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.butEstado.Image = global::Examen_SegundoParcial.Properties.Resources.reparacion_de_la_maquina1;
+            this.butEstado.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.butEstado.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.butEstado.Name = "butEstado";
+            this.butEstado.Size = new System.Drawing.Size(36, 72);
+            this.butEstado.Text = "toolStripButton1";
+            
             // 
             // btnTicket
             // 
@@ -209,7 +210,7 @@ namespace Examen_SegundoParcial.Vistas
             this.Btntickets.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.Btntickets.Image = null;
             this.Btntickets.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton2});
+            this.butonTicket});
             this.Btntickets.Location = new System.Drawing.Point(0, 1);
             this.Btntickets.Name = "Btntickets";
             this.Btntickets.Office12Mode = false;
@@ -218,16 +219,16 @@ namespace Examen_SegundoParcial.Vistas
             this.Btntickets.Size = new System.Drawing.Size(115, 89);
             this.Btntickets.TabIndex = 0;
             this.Btntickets.Text = "Generar Ticket";
+            this.Btntickets.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.Btntickets_ItemClicked);
             // 
-            // toolStripButton2
+            // butonTicket
             // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = global::Examen_SegundoParcial.Properties.Resources.boletos_de_avion;
-            this.toolStripButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(68, 72);
-            this.toolStripButton2.Text = "btnTicket";
+            this.butonTicket.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.butonTicket.Image = global::Examen_SegundoParcial.Properties.Resources.boletos_de_avion;
+            this.butonTicket.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.butonTicket.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.butonTicket.Name = "butonTicket";
+            this.butonTicket.Size = new System.Drawing.Size(68, 72);
             // 
             // toolStripTabItem4
             // 
@@ -264,6 +265,7 @@ namespace Examen_SegundoParcial.Vistas
             this.btnDetalle.Size = new System.Drawing.Size(122, 89);
             this.btnDetalle.TabIndex = 0;
             this.btnDetalle.Text = "Detalle";
+            this.btnDetalle.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.btnDetalle_ItemClicked);
             // 
             // btnDetalles
             // 
@@ -328,13 +330,13 @@ namespace Examen_SegundoParcial.Vistas
         private Syncfusion.Windows.Forms.Tools.ToolStripTabItem toolStrip;
         private Syncfusion.Windows.Forms.Tools.ToolStripTabItem btnTicket;
         private Syncfusion.Windows.Forms.Tools.ToolStripTabItem toolStripTabItem4;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.ToolStripButton btnDetalles;
         private Syncfusion.Windows.Forms.BackStage backStage1;
         public System.Windows.Forms.ToolStripButton btnmantenimiento;
         public Syncfusion.Windows.Forms.Tools.ToolStripEx btnestados;
         public Syncfusion.Windows.Forms.Tools.ToolStripEx Btntickets;
         public Syncfusion.Windows.Forms.Tools.ToolStripEx btnDetalle;
+        public System.Windows.Forms.ToolStripButton butonTicket;
+        public System.Windows.Forms.ToolStripButton butEstado;
     }
 }

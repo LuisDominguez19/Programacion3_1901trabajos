@@ -14,8 +14,9 @@ namespace Examen_SegundoParcial.Entidades
 
         public string CLAVE { get; set; }
 
+        public String Estado  { get; set; }
 
-        public string ADMIN { get; set; }
+   
 
         public String  Telefono { get; set; }
 
@@ -23,6 +24,7 @@ namespace Examen_SegundoParcial.Entidades
 
         public  int Precio { get; set; }
 
+        public int Ticket { get; set; }
 
     }
 }

@@ -61,6 +61,7 @@ namespace Examen_SegundoParcial.Vistas
             this.textemail.Name = "textemail";
             this.textemail.Size = new System.Drawing.Size(197, 20);
             this.textemail.TabIndex = 2;
+            this.textemail.Text = "luisdominguez.1924@gmail.com";
             // 
             // textcontra
             // 
@@ -69,6 +70,7 @@ namespace Examen_SegundoParcial.Vistas
             this.textcontra.PasswordChar = '*';
             this.textcontra.Size = new System.Drawing.Size(197, 20);
             this.textcontra.TabIndex = 3;
+            this.textcontra.Text = "1998";
             // 
             // btnAceptar
             // 

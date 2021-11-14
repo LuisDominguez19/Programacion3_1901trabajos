@@ -58,10 +58,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controladores\DetalleController.cs" />
+    <Compile Include="Controladores\EstadoController.cs" />
     <Compile Include="Controladores\LoginController.cs" />
     <Compile Include="Controladores\TiposController.cs" />
+    <Compile Include="Entidades\Detalles.cs" />
+    <Compile Include="Entidades\Ticket.cs" />
     <Compile Include="Entidades\Usuario.cs" />
     <Compile Include="Modelos\DAO\Conexion.cs" />
+    <Compile Include="Modelos\DAO\TicketDao.cs" />
     <Compile Include="Modelos\DAO\UsuarioDao.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -146,9 +151,6 @@
     <None Include="Resources\mantenimiento.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\reparacion-de-la-maquina.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\boletos-de-avion.png" />
   </ItemGroup>
   <ItemGroup>
@@ -156,6 +158,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\mantenimiento %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boleto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reparacion-de-la-maquina1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
